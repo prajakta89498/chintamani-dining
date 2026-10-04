@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: #6b1f1f;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #ffcc80;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #e67e22;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c65d08;
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+    padding: 70px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: #6b1f1f;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 18px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-box {
+    max-width: 900px;
+
+    margin: auto;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+.about-box h3 {
+    color: #6b1f1f;
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    line-height: 1.7;
+}
+
+
+/* ================= SUB TITLE ================= */
+
+.sub-title {
+    text-align: center;
+
+    color: #6b1f1f;
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* ================= MENU GRID ================= */
+
+.menu-grid,
+.food-grid,
+.fee-grid,
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* ================= MENU CARD ================= */
+
+.menu-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card h3 {
+    color: #6b1f1f;
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    line-height: 1.8;
+}
+
+.menu-card span {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #e67e22;
+
+    font-weight: bold;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+th {
+    background: #6b1f1f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #fff3e0;
+}
+
+
+/* ================= FOOD CARD ================= */
+
+.food-card {
+    background: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card h3 {
+    color: #6b1f1f;
+
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    color: #e67e22;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+
+/* ================= FEES ================= */
+
+.fee-card {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+
+.fee-card h3 {
+    color: #6b1f1f;
+
+    font-size: 24px;
+}
+
+.fee-card h2 {
+    color: #e67e22;
+
+    font-size: 35px;
+
+    margin: 15px 0;
+}
+
+.fee-card ul {
+    list-style: none;
+
+    margin: 20px 0;
+
+    line-height: 2;
+}
+
+
+/* ================= FORM ================= */
+
+.form-container {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+
+    margin-top: 10px;
+
+    color: #6b1f1f;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e67e22;
+}
+
+.submit-btn {
+    margin-top: 20px;
+
+    padding: 14px;
+
+    background: #6b1f1f;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #8b2929;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background: #fff0df;
+}
+
+.contact-card {
+    background: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+    color: #6b1f1f;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #6b1f1f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    line-height: 2;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+}
